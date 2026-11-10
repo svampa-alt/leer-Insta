@@ -9,7 +9,7 @@ on:
       url:
         description: URL pública del reel
         required: true
-        default: https://www.instagram.com/reel/Dfj2-pFSzzt/
+        default: https://www.instagram.com/reel/DeaMWiwt-OM/
 jobs:
   leer:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
           python -m pip install --upgrade yt-dlp faster-whisper
       - name: Descargar y transcribir
         env:
-          REEL_URL: ${{ inputs.url || 'https://www.instagram.com/reel/Dfj2-pFSzzt/' }}
+          REEL_URL: ${{ inputs.url || 'https://www.instagram.com/reel/DeaMWiwt-OM/' }}
         shell: bash
         run: |
           mkdir -p resultado
@@ -34,12 +34,12 @@ jobs:
           echo "Código de descarga: $status" >> resultado/descarga.log
           if [ "$status" -ne 0 ]; then
             echo "No se pudo descargar el reel. Revisar descarga.log" > resultado/estado.txt
-            exit 0
+            exit 1
           fi
           ffmpeg -y -i "$(find resultado -maxdepth 1 -name 'reel.*' ! -name '*.json' ! -name '*.description' | head -n 1)" -vn -ac 1 -ar 16000 resultado/audio.wav > resultado/ffmpeg.log 2>&1
           if [ "$?" -ne 0 ]; then
             echo "Descargado, pero falló la extracción de audio." > resultado/estado.txt
-            exit 0
+            exit 1
           fi
           python - <<'PY'
           import wave
@@ -64,7 +64,7 @@ jobs:
         run: |
           if [ -s resultado/transcripcion.txt ]; then
             mkdir -p transcripciones
-            cp resultado/transcripcion.txt transcripciones/Dfj2-pFSzzt.txt
+            cp resultado/transcripcion.txt transcripciones/DeaMWiwt-OM.txt
             git init -q
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -72,8 +72,8 @@ jobs:
             git fetch -q origin main
             git checkout -q -B main FETCH_HEAD
             mkdir -p transcripciones
-            cp resultado/transcripcion.txt transcripciones/Dfj2-pFSzzt.txt
-            git add transcripciones/Dfj2-pFSzzt.txt
+            cp resultado/transcripcion.txt transcripciones/DeaMWiwt-OM.txt
+            git add transcripciones/DeaMWiwt-OM.txt
             git commit -m "Guardar transcripción del reel" || exit 0
             git push origin main
           fi
