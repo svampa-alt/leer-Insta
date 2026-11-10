@@ -26,7 +26,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p resultado
-          set +e
+          set -e
           yt-dlp --no-playlist --write-info-json --write-description --restrict-filenames -o 'resultado/reel.%(ext)s' "$REEL_URL" > resultado/descarga.log 2>&1
           status=$?
           echo "Código de descarga: $status" >> resultado/descarga.log
@@ -40,15 +40,20 @@ jobs:
             exit 0
           fi
           python - <<'PY'
+          import wave
+          import numpy as np
           from faster_whisper import WhisperModel
           model = WhisperModel("small", device="cpu", compute_type="int8")
-          segments, info = model.transcribe("resultado/audio.wav", beam_size=3, vad_filter=True)
+          with wave.open("resultado/audio.wav", "rb") as wav:
+              audio = np.frombuffer(wav.readframes(wav.getnframes()), dtype=np.int16).astype(np.float32) / 32768.0
+          segments, info = model.transcribe(audio, beam_size=3, vad_filter=True)
           with open("resultado/transcripcion.txt", "w", encoding="utf-8") as f:
               for segment in segments:
                   f.write(f"[{segment.start:.1f}-{segment.end:.1f}] {segment.text.strip()}\n")
           with open("resultado/estado.txt", "w") as f:
               f.write(f"Transcripción completada. Idioma detectado: {info.language}\n")
           PY
+          test -s resultado/transcripcion.txt || { echo "Transcripción ausente o vacía" >&2; exit 1; }
           rm -f resultado/audio.wav
       - name: Guardar resultados
         if: always()
