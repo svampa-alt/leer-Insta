@@ -1,0 +1,14 @@
+[0.0-6.4] I made $179,000 this past month using one strategy on the three minute time frame,
+[6.4-10.2] and I'm going to explain it to you in the next 60 seconds. All you need is two indicators,
+[10.2-16.5] the VWAP indicator and the EMA indicator. Type in VWAP, select this one, type in EMA,
+[16.5-23.8] select this one. For VWAP settings, set the source to OHLC-4, set the anchor period to session.
+[23.8-30.7] For EMA, set the length to 9, set the source to close. Our entry will be right before or right when
+[30.7-36.4] the VWAP and the EMA cross. Right here you can see VWAP and EMA 9 are about to cross. Right here you
+[36.4-42.6] can see VWAP and EMA 9 are about to cross to the upside by calls. Absolutely fucking insane.
+[42.6-46.5] And as you can see, we were able to capture this monster play. Right here you can see the
+[46.5-53.0] VWAP and the EMA 9 are crossing to the downside by puts. Holy shit, this thing dropped.
+[53.0-57.7] As you can see, we were able to catch this big sell-off right here. Two more things.
+[57.7-64.8] If you want to receive a free strategy from me, like and comment in the video, comment,
+[64.8-71.9] set up, last thing. If you want to trade with me every single day live trading, click the link
+[71.9-78.1] in bio, sign up for the monthly membership with a seven-day free trial, and trade live with
+[78.1-80.1] me every single day.
