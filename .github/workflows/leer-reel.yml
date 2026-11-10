@@ -1,5 +1,7 @@
 name: Leer reel de Instagram
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       url:
@@ -20,7 +22,7 @@ jobs:
           python -m pip install --upgrade yt-dlp faster-whisper
       - name: Descargar y transcribir
         env:
-          REEL_URL: ${{ inputs.url }}
+          REEL_URL: ${{ inputs.url || 'https://www.instagram.com/reel/Dfj2-pFSzzt/' }}
         shell: bash
         run: |
           mkdir -p resultado
