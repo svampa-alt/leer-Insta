@@ -1,0 +1,31 @@
+[0.0-2.7] So Claude just killed day trading.
+[2.7-4.8] So there's a free skill called the strategy creator
+[4.8-6.2] that you can install right now.
+[6.2-7.0] And you can give it ideas
+[7.0-8.7] of what you want your trading strategy to be
+[8.7-10.6] or you could just let it ask you questions.
+[10.6-12.6] It's going to keep asking you questions
+[12.6-14.4] until it has everything it needs
+[14.4-16.6] to build you a full trading strategy.
+[16.6-18.3] Then it even asks if you want to back test it
+[18.3-20.6] and it uses all the data it has available to do so.
+[20.6-22.0] Then it finalizes the strategy.
+[22.0-24.2] You can keep it public or set it to be private
+[24.2-26.4] so that no one else has access to your strategy.
+[26.4-28.4] From there, AI will run the whole thing for you.
+[28.4-29.4] Then every time it trades,
+[29.4-31.4] it'll show up right here on the strategy page
+[31.4-34.2] so you can see how it's actually trading live in real time
+[34.2-36.2] before you ever put a real dollar behind it.
+[36.2-37.6] This lets you build as many as you want,
+[37.6-39.5] see how they trade and then just pick your favorite ones.
+[39.5-40.4] Once it proves itself,
+[40.4-42.0] you can then hit the auto trade button,
+[42.0-43.4] connect to a broker and then even put
+[43.4-45.6] multiple trading strategies into one broker,
+[45.6-47.4] split up the allocations however you want
+[47.4-48.8] and then set the amount of leverage
+[48.8-50.1] you want the trading bot to trade with.
+[50.1-51.3] And like I said, the skill is free
+[51.3-52.6] but almost no one's using it yet.
+[52.6-54.2] So comment skill and I'll send it.
