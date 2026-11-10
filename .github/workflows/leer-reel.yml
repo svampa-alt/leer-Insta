@@ -2,6 +2,8 @@ name: Leer reel de Instagram
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "transcripciones/**"
   workflow_dispatch:
     inputs:
       url:
@@ -13,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
-      contents: read
+      contents: write
     steps:
       - name: Instalar dependencias
         run: |
@@ -55,6 +57,26 @@ jobs:
           PY
           test -s resultado/transcripcion.txt || { echo "Transcripción ausente o vacía" >&2; exit 1; }
           rm -f resultado/audio.wav
+      - name: Publicar transcripción en repositorio
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s resultado/transcripcion.txt ]; then
+            mkdir -p transcripciones
+            cp resultado/transcripcion.txt transcripciones/Dfj2-pFSzzt.txt
+            git init -q
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            git fetch -q origin main
+            git checkout -q -B main FETCH_HEAD
+            mkdir -p transcripciones
+            cp resultado/transcripcion.txt transcripciones/Dfj2-pFSzzt.txt
+            git add transcripciones/Dfj2-pFSzzt.txt
+            git commit -m "Guardar transcripción del reel" || exit 0
+            git push origin main
+          fi
       - name: Guardar resultados
         if: always()
         uses: actions/upload-artifact@v4
