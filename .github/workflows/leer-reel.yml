@@ -9,7 +9,7 @@ on:
       url:
         description: URL pública del reel
         required: true
-        default: https://www.instagram.com/reel/DfVTTZIgNmO/
+        default: https://www.instagram.com/reel/DfbCJuDNdM8/
 jobs:
   leer:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
           python -m pip install --upgrade yt-dlp faster-whisper
       - name: Descargar y transcribir
         env:
-          REEL_URL: ${{ inputs.url || 'https://www.instagram.com/reel/DfVTTZIgNmO/' }}
+          REEL_URL: ${{ inputs.url || 'https://www.instagram.com/reel/DfbCJuDNdM8/' }}
         shell: bash
         run: |
           mkdir -p resultado
@@ -64,7 +64,7 @@ jobs:
         run: |
           if [ -s resultado/transcripcion.txt ]; then
             mkdir -p transcripciones
-            cp resultado/transcripcion.txt transcripciones/DfVTTZIgNmO.txt
+            cp resultado/transcripcion.txt transcripciones/DfbCJuDNdM8.txt
             git init -q
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -72,8 +72,8 @@ jobs:
             git fetch -q origin main
             git checkout -q -B main FETCH_HEAD
             mkdir -p transcripciones
-            cp resultado/transcripcion.txt transcripciones/DfVTTZIgNmO.txt
-            git add transcripciones/DfVTTZIgNmO.txt
+            cp resultado/transcripcion.txt transcripciones/DfbCJuDNdM8.txt
+            git add transcripciones/DfbCJuDNdM8.txt
             git commit -m "Guardar transcripción del reel" || exit 0
             git push origin main
           fi
