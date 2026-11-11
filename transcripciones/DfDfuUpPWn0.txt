@@ -1,0 +1,12 @@
+[0.0-2.0] Trucos secretos de Github que casi nadie sabe.
+[2.0-5.3] El primero es cambiar Github por Githreverse en la URL.
+[5.3-7.7] Y te va a dar el prompt para armar ese proyecto desde cero.
+[7.7-9.9] El segundo es cambiar Hub por diagrama.
+[9.9-13.3] Y va a crear un diagrama completo de cómo está armado ese repositorio sin que tengas
+[13.3-14.5] que abrir ningún archivo.
+[14.5-16.5] El tercero es cambiar Hub por ingest.
+[16.5-19.4] Te va a dar todo el repositorio en un solo texto para que puedas pegarlo en cloud.
+[19.4-23.7] Y para el cuarto vas a cambiar Github.com por gittmcp.io.
+[23.7-26.7] Y el repositorio se va a convertir en un mcp que puedes conectar con cloud.
+[26.7-29.9] Si querés estos trucos, comentad repo y te paso estos cuatro y tres más.
+[29.9-31.9] ¡Suscríbete!
