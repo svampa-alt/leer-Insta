@@ -1,0 +1,29 @@
+[0.0-3.0] If you bought Pepsi stock every time it fell behind Coke
+[3.0-6.1] and shorted Coke every time it ran ahead since 1972,
+[6.1-8.9] you'd be up over 46,000% on paper.
+[8.9-10.2] Now imagine you're the opposite.
+[10.2-11.6] You bought the one that ran ahead
+[11.6-13.2] and you shorted the one that fell behind.
+[13.2-16.0] That same Pepsi trade would be down over 99%.
+[16.0-18.4] And apparently this isn't the only pair that does this.
+[18.4-20.3] A research paper found a weird phenomenon
+[20.3-22.4] across thousands of stock pairs across the world.
+[22.4-24.4] It basically shows that if you buy the stock
+[24.4-25.6] that falls behind its twin
+[25.6-27.2] and short the one that runs ahead,
+[27.2-29.3] you're statistically more likely to make money.
+[29.3-30.2] So what's going on?
+[30.2-31.8] Some stocks basically trade in pairs.
+[31.8-34.7] Coke and Pepsi, Walmart and Target, Home Depot and Lowe's.
+[34.7-37.1] Same product, same customers, same market.
+[37.1-38.9] So their stocks tend to move together
+[38.9-40.5] but sometimes one shoots up
+[40.5-41.9] while the other one barely moves
+[41.9-43.9] and that gap could be a mistake in the market.
+[43.9-45.9] So if you bet they'll snap back together,
+[45.9-47.5] shorting the one that shot up
+[47.5-49.0] and buying the one that fell behind,
+[49.0-51.0] you could make profit on both sides of the trade.
+[51.0-52.6] This is called statistical arbitrage
+[52.6-55.4] and what the top hedge funds have been doing for decades.
+[55.4-58.0] Share this with a friend and make sure you follow for more.
