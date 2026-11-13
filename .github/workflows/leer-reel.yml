@@ -28,6 +28,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p resultado
+          echo 'Reejecución solicitada para DeaHN_lJJkB'
           set +e
           yt-dlp --retries 5 --fragment-retries 5 --no-playlist --write-info-json --write-description --restrict-filenames -o 'resultado/reel.%(ext)s' "$REEL_URL" > resultado/descarga.log 2>&1
           status=$?
