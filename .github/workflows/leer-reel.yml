@@ -28,9 +28,10 @@ jobs:
         shell: bash
         run: |
           mkdir -p resultado
-          set -e
-          yt-dlp --no-playlist --write-info-json --write-description --restrict-filenames -o 'resultado/reel.%(ext)s' "$REEL_URL" > resultado/descarga.log 2>&1
+          set +e
+          yt-dlp --retries 5 --fragment-retries 5 --no-playlist --write-info-json --write-description --restrict-filenames -o 'resultado/reel.%(ext)s' "$REEL_URL" > resultado/descarga.log 2>&1
           status=$?
+          set -e
           echo "Código de descarga: $status" >> resultado/descarga.log
           if [ "$status" -ne 0 ]; then
             echo "No se pudo descargar el reel. Revisar descarga.log" > resultado/estado.txt
