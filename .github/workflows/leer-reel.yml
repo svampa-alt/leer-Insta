@@ -36,6 +36,9 @@ jobs:
           echo "Código de descarga: $status" >> resultado/descarga.log
           if [ "$status" -ne 0 ]; then
             echo "No se pudo descargar el reel. Revisar descarga.log" > resultado/estado.txt
+            echo "::group::Diagnóstico yt-dlp"
+            cat resultado/descarga.log
+            echo "::endgroup::"
             exit 1
           fi
           ffmpeg -y -i "$(find resultado -maxdepth 1 -name 'reel.*' ! -name '*.json' ! -name '*.description' | head -n 1)" -vn -ac 1 -ar 16000 resultado/audio.wav > resultado/ffmpeg.log 2>&1
