@@ -1,0 +1,11 @@
+[0.0-3.4] Estos son los cinco plugins de IA que tenés que instalar en Cloud Code ahora mismo.
+[3.4-10.3] El primero es FreeLLMAPI, que le da a tu Cloud Code más de 7.000 millones de tokens de IA gratis de 600 modelos.
+[10.3-14.0] Y te pasa automáticamente al siguiente mejor modelo cada vez que se te acaba el límite de uso.
+[14.0-19.1] El segundo es LEMOO PUSCAR, que le enseña a tu Cloud Code a animar en más de 60 estilos distintos.
+[19.1-23.1] Para que puedas crear esos vídeos explicativos animados que hoy se están viralizando en todo Internet.
+[23.1-29.2] El tercero es Ponytail, que optimiza la salida de Cloud Code y te baje el uso en más de un 50% sin perder nada de precisión.
+[29.2-32.5] El cuarto es AgentReach, que te deja escrapear lo que quieras de Internet.
+[32.5-37.5] Incluso en plataformas cerradas como LinkedIn, Instagram, X y Reddit, sin tener que pagar nada.
+[37.5-42.8] Y el último es NVIDIA SKILL ESPECTOR, un scanner de IA gratis que funciona como un antivirus para tus skills de Cloud
+[42.8-45.2] y detecta malware escondido antes de que las instales.
+[45.2-49.0] Así que si queréis probarlos todos, comentad plugins acá abajo y te mando el link directo.
