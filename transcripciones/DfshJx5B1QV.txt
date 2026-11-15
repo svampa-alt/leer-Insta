@@ -1,0 +1,13 @@
+[0.0-5.0] No vuelvas a usar Cloud Code, sin antes instalar estos 3 plugins gratuitos que te van a ahorrar
+[5.0-6.2] miles de tokens.
+[6.2-11.0] El primero es Ponytail, evita que Cloud escriba código de más para resolver lo que le pediste.
+[11.0-15.9] Entonces, consume menos tokens, termina más rápido y te cuesta muchísimo menos.
+[15.9-19.2] Después está Graphify, que convierte todo tu proyecto en un mapa.
+[19.2-23.0] Así, Cloud lee el mapa en vez de cada uno de los archivos, lo que lo hace más
+[23.0-25.3] rápido y más eficiente con los tokens.
+[25.3-27.1] Y el tercero es OmniRoot.
+[27.1-31.2] Cuando llegas al límite de uso de Cloud, te pasa automáticamente a otro modelo gratuito
+[31.2-32.8] para que puedas seguir trabajando.
+[32.8-36.6] Obviamente no rinde igual que Cloud, pero por lo menos no te quedas a mitad de lo que
+[36.6-37.6] estabas haciendo.
+[37.6-41.0] Si querés los enlaces, comentad tokens y te los paso por mensaje.
